@@ -4,7 +4,6 @@
 <p align="center">
   <a href="https://travis-ci.org/NeverBounce/NeverBounceCli-Ruby"><img src="https://travis-ci.org/NeverBounce/NeverBounceCli-Ruby.svg" alt="Build Status"></a>
   <a href="https://codeclimate.com/github/github/NeverBounce/NeverBounceCli-Ruby"><img src="https://codeclimate.com/github/github/NeverBounce/NeverBounceCli-Ruby/badges/gpa.svg" /></a>
-  <a href="https://codeclimate.com/github/NeverBounce/NeverBounceCli-Ruby/coverage"><img src="https://codeclimate.com/github/NeverBounce/NeverBounceCli-Ruby/badges/coverage.svg" /></a>
 </p>
 
 NeverBounceCli-Ruby
