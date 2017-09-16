@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require "neverbounce-cli"
+
+exit NeverBounce::CLI::Script::AccountInfo.new.main

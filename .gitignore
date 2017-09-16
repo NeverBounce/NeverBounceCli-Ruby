@@ -1,0 +1,21 @@
+
+# General Ruby.
+/.bundle/
+/coverage/
+/doc/*
+/Gemlocal
+/Gemlocal.lock
+/tmp/*
+/vendor/bundle/
+/.yardoc/
+
+# Project-specific.
+/lib/lib_local.rb
+/log/
+/spec/spec_local.rb
+
+# Bak/old/orig etc.
+*.old*
+*.orig
+/*.patch
+*.ref*
