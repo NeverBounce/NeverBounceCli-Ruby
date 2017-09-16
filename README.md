@@ -60,7 +60,7 @@ USAGE: nb-single-check [options] [VAR1=value] [VAR2=value] ...
 
 Environment variables:
 * API_KEY      - API key ("2ed45186c72f9319dc64338cdf16ab76b44cf3d1")
-* EMAIL        - E-mail to check ("tom@isp.com", "dick+1@domain.com")
+* EMAIL        - E-mail to check ("alice@isp.com", "bob.smith+1@domain.com")
 - ADDRESS_INFO - Request additional address info ("y", "n")
 - API_URL      - Custom API URL ("https://staging-api.isp.com/v5")
 - CREDITS_INFO - Request additional credits info ("y", "n")

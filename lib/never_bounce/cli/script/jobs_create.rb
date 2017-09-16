@@ -12,7 +12,7 @@ module NeverBounce; module CLI; module Script
     envar "AUTO_PARSE", "Start parsing the job immediately after creation", ["y", "n"]
     envar "FILENAME", "Original CSV filename", [{default: "YYYYMMDD-HHMMSS.csv"}, "My data.csv"]
     envar "REMOTE_INPUT", "Remote URL with CSV of e-mails to verify", ["http://site.com/emails.csv"]
-    envar "SUPPLIED_INPUT", "List of e-mails to verify", ["tom@isp.com Tom User;dick@gmail.com Dick Other"]
+    envar "SUPPLIED_INPUT", "List of e-mails to verify", ["alice@isp.com Alice Roberts;bob.smith@gmail.com Bob Smith"]
     envar (k = "AUTO_START"), *SHARED_ENVARS[k]
     envar (k = "RUN_SAMPLE"), *SHARED_ENVARS[k]
 

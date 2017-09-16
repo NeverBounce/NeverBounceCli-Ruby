@@ -23,8 +23,8 @@ module NeverBounce; module CLI; module Script; class JobsCreate
     #
     # NOTE: The parser doesn't validate e-mail addresses.
     #
-    #   process("tom@isp.com Tom User;dick@gmail.com Dick Other")
-    #   # => [["tom@isp.com", "Tom User"], ["dick@gmail.com", "Dick Other"]]
+    #   process("alice@isp.com Alice Roberts;bob.smith@gmail.com Bob Smith")
+    #   # => [["alice@isp.com", "Alice Roberts"], ["bob.smith@gmail.com", "Bob Smith"]]
     #
     # @return [Array<email, name>]
     def process(content)

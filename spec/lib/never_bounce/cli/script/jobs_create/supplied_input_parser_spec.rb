@@ -23,9 +23,9 @@ module NeverBounce; module CLI; module Script; class JobsCreate
         [
           ["abc", [["abc", ""]]],
           ["  abc   def   ", [["abc", "def"]]],
-          ["tom@isp.com Tom User;dick@gmail.com Dick Other", [["tom@isp.com", "Tom User"], ["dick@gmail.com", "Dick Other"]]],
-          ["  tom@isp.com Tom User  ; dick@gmail.com  Dick Other  ", [["tom@isp.com", "Tom User"], ["dick@gmail.com", "Dick Other"]]],
-          ["tom@isp.com Tom  User;,\n", [["tom@isp.com", "Tom  User"]]],
+          ["alice@isp.com Alice Roberts;bob.smith@gmail.com Bob Smith", [["alice@isp.com", "Alice Roberts"], ["bob.smith@gmail.com", "Bob Smith"]]],
+          ["  alice@isp.com Alice Roberts  ; bob.smith@gmail.com  Bob Smith  ", [["alice@isp.com", "Alice Roberts"], ["bob.smith@gmail.com", "Bob Smith"]]],
+          ["alice@isp.com Alice  Roberts;,\n", [["alice@isp.com", "Alice  Roberts"]]],
         ].each do |input, expected|
           expect([input, newo[input]]).to eq [input, expected]
         end

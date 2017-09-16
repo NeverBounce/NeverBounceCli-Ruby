@@ -8,7 +8,7 @@ module NeverBounce; module CLI; module Script
     attr_writer :address_info, :email, :credits_info, :timeout
 
     envar "ADDRESS_INFO", "Request additional address info", ["y", "n"]
-    envar "EMAIL*", "E-mail to check", ["tom@isp.com", "dick+1@domain.com"]
+    envar "EMAIL*", "E-mail to check", ["alice@isp.com", "bob.smith+1@domain.com"]
     envar "CREDITS_INFO", "Request additional credits info", ["y", "n"]
     envar "TIMEOUT", "Timeout in seconds to verify the address", ["5"]
 

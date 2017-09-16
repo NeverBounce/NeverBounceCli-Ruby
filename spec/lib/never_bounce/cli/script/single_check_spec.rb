@@ -4,7 +4,7 @@ module NeverBounce; module CLI; module Script
     include_dir_context __dir__
 
     def margv(*args)
-      ["API_KEY=abc", "EMAIL=tom@isp.com"] + args
+      ["API_KEY=abc", "EMAIL=alice@isp.com"] + args
     end
 
     it_behaves_like "instantiatable"
@@ -42,7 +42,7 @@ module NeverBounce; module CLI; module Script
     describe "#request_curl" do
       it "generally works" do
         r = goodo(argv: margv("ADDRESS_INFO=y", "CREDITS_INFO=y", "TIMEOUT=12"))
-        expect(r.request_curl).to eq ["--request", "GET", "--url", "https://api.neverbounce.com/v4/single/check", "--header", "Content-Type: application/json", "--data-binary", "{\"email\":\"tom@isp.com\",\"key\":\"abc\",\"address_info\":true,\"credits_info\":true,\"timeout\":12}"]
+        expect(r.request_curl).to eq ["--request", "GET", "--url", "https://api.neverbounce.com/v4/single/check", "--header", "Content-Type: application/json", "--data-binary", "{\"email\":\"alice@isp.com\",\"key\":\"abc\",\"address_info\":true,\"credits_info\":true,\"timeout\":12}"]
       end
     end
 
