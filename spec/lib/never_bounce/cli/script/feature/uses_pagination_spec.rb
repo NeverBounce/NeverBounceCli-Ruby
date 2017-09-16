@@ -1,7 +1,7 @@
 
 module NeverBounce; module CLI; module Script; module Feature
   describe UsesPagination do
-    let (:klass) do
+    let(:klass) do
       feature = described_class
       Class.new(Meaningful) do
         feature.load(self)
