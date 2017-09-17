@@ -49,9 +49,9 @@ Before we begin, here's just 2 things you need to know to become a happy NeverBo
   <br />For example, `nb-single-check` calls `single/check`, `nb-jobs-create` calls `jobs/create` and so on.
 2. Every script supports `--help` and tells everything about itself.
 
-Let's check a single e-mail:
+Let's see what `nb-single-check` has to offer:
 
-```sh
+```
 $ bin/nb-single-check --help
 nb-single-check - Check a single e-mail
 
@@ -70,9 +70,9 @@ Environment variables:
 - TIMEOUT      - Timeout in seconds to verify the address ("5")
 ```
 
-Let's do it:
+Now, let's check an e-mail:
 
-```sh
+```
 $ bin/nb-single-check EMAIL=support@neverbounce.com
 
 Response:
@@ -84,7 +84,11 @@ Response:
 |        | role_account     |          |          |
 |        | smtp_connectable |          |          |
 +--------+------------------+----------+----------+
+```
 
+With a bit of tuning:
+
+```
 $ bin/nb-single-check EMAIL=support@neverbounce.com CREDITS_INFO=y
 
 Response:
@@ -96,8 +100,6 @@ CreditsInfo:
 +---------+----------+---------+----------+
 |     969 |        1 | 1000000 |        0 |
 +---------+----------+---------+----------+
-
-etc.
 ```
 
 ## Advanced usage
@@ -106,7 +108,7 @@ etc.
 
 Each of our scripts can print command to make the request using native `curl` binary on your OS. For example:
 
-```sh
+```
 $ bin/nb-single-check EMAIL=support@neverbounce.com CURL=y
 curl --request GET --url https://api.neverbounce.com/v4/single/check --header Content-Type:\ application/json
 --data-binary \{\"email\":\"support@neverbounce.com\",\"key\":\"key123abc\"\}
@@ -116,15 +118,15 @@ You can now pass this command around, use it in scripts etc.
 
 ### Print raw response with `RAW=y`
 
-Each of our scripts can print raw server response without trying to decode it. For example:
+Each of our scripts can print raw server response without decoding it. For example:
 
-```sh
+```
 $ bin/nb-single-check EMAIL=support@neverbounce.com RAW=y
 {"status":"success","result":"valid","flags":["smtp_connectable","has_dns","has_dns_mx","role_account"],
 "suggested_correction":"","execution_time":787}
 ```
 
-Although primary users of this feature is us at NeverBounce, you can also benefit from it, e.g. if you encounter a server glitch and want to supply us a meaningful bug report.
+Although primary users of this feature is us at NeverBounce, you can also find it helpful once you encounter a server glitch and want to send us a meaningful bug report.
 
 ## Compatibility
 
