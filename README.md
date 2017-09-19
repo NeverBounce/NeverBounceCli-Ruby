@@ -20,9 +20,15 @@ This is the official NeverBounce V4 CLI written in Ruby. See also:
 In your `Gemfile`, add:
 
 ```ruby
-gem "neverbounce-api", git: "https://github.com/NeverBounce/NeverBounceApi-Ruby.git"
-gem "neverbounce-cli", git: "https://github.com/NeverBounce/NeverBounceCli-Ruby.git"
+gem "neverbounce-cli"
 ```
+
+> For **edge versions** of both, fetch gems directly:
+>
+> ```ruby
+> gem "neverbounce-api", git: "https://github.com/NeverBounce/NeverBounceApi-Ruby.git"
+> gem "neverbounce-cli", git: "https://github.com/NeverBounce/NeverBounceCli-Ruby.git"
+> ```
 
 Install bundle, generate binstubs:
 
