@@ -38,8 +38,8 @@ $ bundle install
 $ bundle binstub neverbounce-cli
 
 $ ls bin
-nb-account-info  nb-jobs-delete    nb-jobs-parse    nb-jobs-search  nb-jobs-status
-nb-jobs-create   nb-jobs-download  nb-jobs-results  nb-jobs-start   nb-single-check
+nb-account-info  nb-jobs-delete   nb-jobs-parse    nb-jobs-search   nb-jobs-status   nb-single-check
+nb-jobs-create   nb-jobs-download nb-jobs-results  nb-jobs-start    nb-poe-confirm
 ```
 
 Create `~/.neverbounce.yml`, add your API key there:
