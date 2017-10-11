@@ -14,6 +14,7 @@
 /lib/lib_local.rb
 /log/
 /spec/spec_local.rb
+/bin/*
 
 # Bak/old/orig etc.
 *.old*
