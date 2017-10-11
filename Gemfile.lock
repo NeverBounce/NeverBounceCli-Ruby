@@ -1,14 +1,14 @@
 GIT
   remote: https://github.com/NeverBounce/NeverBounceApi-Ruby.git
-  revision: f7ecf950759aa61b818089cd1a1554bb93cb3851
+  revision: e1760adf5e4431fbaae811ceb3d0d383db6bc181
   specs:
-    neverbounce-api (1.0.0)
+    neverbounce-api (1.0.1)
       httparty (~> 0.15)
 
 PATH
   remote: .
   specs:
-    neverbounce-cli (1.0.0)
+    neverbounce-cli (1.0.1)
       neverbounce-api (~> 1.0.0)
       terminal-table (~> 1.8.0)
 
@@ -57,4 +57,4 @@ DEPENDENCIES
   yard
 
 BUNDLED WITH
-   1.15.3
+   1.15.4
