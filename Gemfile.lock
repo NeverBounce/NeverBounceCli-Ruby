@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/NeverBounce/NeverBounceApi-Ruby.git
-  revision: ef563ea2f504990f88f5be41980e162c38846d75
+  revision: aed1b4d25406ec79fa5503155cdeddea828ee924
   specs:
-    neverbounce-api (1.0.2)
+    neverbounce-api (1.0.3)
       httparty (~> 0.15)
 
 PATH
