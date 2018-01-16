@@ -45,8 +45,10 @@ nb-jobs-create   nb-jobs-download nb-jobs-results  nb-jobs-start    nb-poe-confi
 Create `~/.neverbounce.yml`, add your API key there:
 
 ```yaml
-api_key: key123abc
+api_key: secret_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
+
+>**The API username and secret key used to authenticate V3 API requests will not work to authenticate V4 API requests.** If you are attempting to authenticate your request with the 8 character username or 12-16 character secret key the request will return an `auth_failure` error. The API key used for the V4 API will look like the following: `secret_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx`. To create new V4 API credentials please go [here](https://app.neverbounce.com/apps/custom-integration/new).
 
 ## Usage
 
