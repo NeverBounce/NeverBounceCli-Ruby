@@ -25,6 +25,7 @@ module NeverBounce; module CLI; module Script
     # @return [Object]
     def request
       @request ||= API::Request::JobsSearch.new({
+        api_url: api_url,
         api_key: api_key,
         job_id: job_id,
         page: page,

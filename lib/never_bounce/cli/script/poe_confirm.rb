@@ -34,6 +34,7 @@ module NeverBounce; module CLI; module Script
     # @return [Object]
     def request
       @request ||= API::Request::POEConfirm.new({
+        api_url: api_url,
         api_key: api_key,
         email: email,
         transaction_id: transaction_id,

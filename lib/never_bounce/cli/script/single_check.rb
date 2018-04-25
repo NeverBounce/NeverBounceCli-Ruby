@@ -43,6 +43,7 @@ module NeverBounce; module CLI; module Script
     # @return [Object]
     def request
       @request ||= API::Request::SingleCheck.new({
+        api_url: api_url,
         address_info: address_info,
         api_key: api_key,
         credits_info: credits_info,

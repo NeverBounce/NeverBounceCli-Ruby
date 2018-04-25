@@ -109,6 +109,7 @@ module NeverBounce; module CLI; module Script
     # @return [Object]
     def request
       @request ||= API::Request::JobsCreate.new({
+        api_url: api_url,
         api_key: api_key,
         auto_parse: auto_parse,
         auto_start: auto_start,
