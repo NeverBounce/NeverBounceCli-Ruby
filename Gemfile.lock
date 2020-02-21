@@ -8,7 +8,7 @@ GIT
 PATH
   remote: .
   specs:
-    neverbounce-cli (1.0.3)
+    neverbounce-cli (1.1.0)
       neverbounce-api (~> 1.1.0)
       terminal-table (~> 1.8.0)
 

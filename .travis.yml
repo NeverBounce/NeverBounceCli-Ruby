@@ -5,7 +5,11 @@ env:
   global:
     - CC_TEST_REPORTER_ID=c38ec11990e222f0b5aa1254e9d97dd92a2eadbaeef9e5cc1c2eaa93e9322bae
 
+before_install:
+  - gem install bundler
+
 install:
+  - bundle update --bundler
   - bundle install --path ~/bundle
 
 before_script:
@@ -20,8 +24,7 @@ after_script:
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
 
 rvm:
-  - 2.0
-  - 2.1
-  - 2.2
-  - 2.3
   - 2.4
+  - 2.5
+  - 2.6
+  - 2.7
