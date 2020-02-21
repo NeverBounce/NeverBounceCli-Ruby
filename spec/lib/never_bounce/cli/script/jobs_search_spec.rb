@@ -31,7 +31,7 @@ module NeverBounce; module CLI; module Script
         expect(r.job_id).to eq "abc"
         expect(r.page).to eq 12
         expect(r.per_page).to eq 34
-        expect(r.request_curl).to eq ["--request", "GET", "--url", "https://api.neverbounce.com/v4/jobs/search", "--header", "Content-Type: application/json", "--data-binary", "{\"key\":\"abc\",\"job_id\":\"abc\",\"page\":12,\"items_per_page\":34}"]
+        expect(r.request_curl).to eq ["--request", "GET", "--url", "https://api.neverbounce.com/v4.1/jobs/search", "--header", "Content-Type: application/json", "--data-binary", "{\"key\":\"abc\",\"job_id\":\"abc\",\"page\":12,\"items_per_page\":34}"]
       end
     end
 

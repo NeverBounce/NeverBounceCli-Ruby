@@ -13,7 +13,7 @@ module NeverBounce; module CLI; module Script
     describe "#request_curl" do
       it "generally works" do
         r = goodo(argv: margv())
-        expect(r.request_curl).to eq ["--request", "GET", "--url", "https://api.neverbounce.com/v4/poe/confirm", "--header", "Content-Type: application/json", "--data-binary", "{\"email\":\"alice@isp.com\",\"transaction_id\":\"NBTRNS-123456\",\"confirmation_token\":\"abcdefg123456\",\"result\":\"valid\",\"key\":\"abc\"}"]
+        expect(r.request_curl).to eq ["--request", "GET", "--url", "https://api.neverbounce.com/v4.1/poe/confirm", "--header", "Content-Type: application/json", "--data-binary", "{\"email\":\"alice@isp.com\",\"transaction_id\":\"NBTRNS-123456\",\"confirmation_token\":\"abcdefg123456\",\"result\":\"valid\",\"key\":\"abc\"}"]
       end
     end
 

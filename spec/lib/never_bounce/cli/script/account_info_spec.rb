@@ -13,7 +13,7 @@ module NeverBounce; module CLI; module Script
     describe "#request_curl" do
       it "generally works" do
         r = goodo(argv: margv)
-        expect(r.request_curl).to eq ["--request", "GET", "--url", "https://api.neverbounce.com/v4/account/info", "--header", "Content-Type: application/json", "--data-binary", "{\"key\":\"abc\"}"]
+        expect(r.request_curl).to eq ["--request", "GET", "--url", "https://api.neverbounce.com/v4.1/account/info", "--header", "Content-Type: application/json", "--data-binary", "{\"key\":\"abc\"}"]
       end
     end
 

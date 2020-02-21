@@ -83,7 +83,7 @@ module NeverBounce; module CLI; module Script
             "REMOTE_INPUT=remote_input",
             "RUN_SAMPLE=y",
           ))
-          expect(r.request_curl).to eq ["--request", "POST", "--url", "https://api.neverbounce.com/v4/jobs/create", "--header", "Content-Type: application/json", "--data-binary", "{\"input\":\"remote_input\",\"input_location\":\"remote_url\",\"filename\":\"filename\",\"key\":\"abc\",\"auto_start\":true,\"auto_parse\":true,\"run_sample\":true}"]
+          expect(r.request_curl).to eq ["--request", "POST", "--url", "https://api.neverbounce.com/v4.1/jobs/create", "--header", "Content-Type: application/json", "--data-binary", "{\"input\":\"remote_input\",\"input_location\":\"remote_url\",\"filename\":\"filename\",\"key\":\"abc\",\"auto_start\":true,\"auto_parse\":true,\"run_sample\":true}"]
         end
       end
 
@@ -96,7 +96,7 @@ module NeverBounce; module CLI; module Script
             "RUN_SAMPLE=y",
             "SUPPLIED_INPUT=alice@isp.com;bob.smith@gmail.com",
           ))
-          expect(r.request_curl).to eq ["--request", "POST", "--url", "https://api.neverbounce.com/v4/jobs/create", "--header", "Content-Type: application/json", "--data-binary", "{\"input\":[[\"alice@isp.com\",\"\"],[\"bob.smith@gmail.com\",\"\"]],\"input_location\":\"supplied\",\"filename\":\"filename\",\"key\":\"abc\",\"auto_start\":true,\"auto_parse\":true,\"run_sample\":true}"]
+          expect(r.request_curl).to eq ["--request", "POST", "--url", "https://api.neverbounce.com/v4.1/jobs/create", "--header", "Content-Type: application/json", "--data-binary", "{\"input\":[[\"alice@isp.com\",\"\"],[\"bob.smith@gmail.com\",\"\"]],\"input_location\":\"supplied\",\"filename\":\"filename\",\"key\":\"abc\",\"auto_start\":true,\"auto_parse\":true,\"run_sample\":true}"]
         end
       end
     end

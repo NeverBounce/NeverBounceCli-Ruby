@@ -24,7 +24,7 @@ module NeverBounce; module CLI; module Script
     describe "#request_curl" do
       it "generally works" do
         r = goodo(argv: margv("AUTO_START=y"))
-        expect(r.request_curl).to eq ["--request", "POST", "--url", "https://api.neverbounce.com/v4/jobs/parse", "--header", "Content-Type: application/json", "--data-binary", "{\"job_id\":\"12\",\"key\":\"abc\",\"auto_start\":true}"]
+        expect(r.request_curl).to eq ["--request", "POST", "--url", "https://api.neverbounce.com/v4.1/jobs/parse", "--header", "Content-Type: application/json", "--data-binary", "{\"job_id\":\"12\",\"key\":\"abc\",\"auto_start\":true}"]
       end
     end
 

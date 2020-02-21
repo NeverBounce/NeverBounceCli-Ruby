@@ -21,7 +21,7 @@ module NeverBounce; module CLI; module Script
         )
         expect { r.main }.not_to raise_error
         lines = r.stdout.tap(&:rewind).to_a
-        expect(lines[0]).to start_with "curl --request POST --url https://api.neverbounce.com/v4/jobs/parse"
+        expect(lines[0]).to start_with "curl --request POST --url https://api.neverbounce.com/v4.1/jobs/parse"
       end
     end
 
