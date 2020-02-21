@@ -19,6 +19,6 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
   s.test_files = `git ls-files -- {test,spec,features}/*`.split("\n")
 
-  s.add_dependency("neverbounce-api", "~> 1.0.0")
+  s.add_dependency("neverbounce-api", "~> 1.1.0")
   s.add_dependency("terminal-table", "~> 1.8.0")
 end
